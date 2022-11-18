@@ -28,7 +28,11 @@ class StartPage extends StatelessWidget {
                   labelText: 'Name',
                 ),
                 onSubmitted: submitName,
-              )
+              ),
+              ElevatedButton(
+                onPressed: game.openScoreboard,
+                child: Text('Enter'),
+              ),
             ],
           ),
         ),
